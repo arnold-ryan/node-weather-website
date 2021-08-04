@@ -21,7 +21,8 @@ const forecast = (longitude, latitude, callback) => {
           " degrees." +
           " There is " +
           body.current.humidity +
-          "% humidity outside.",
+          "% humidity outside and " +
+          body.current.weather[0].description,
       });
     }
   });
